@@ -4,7 +4,7 @@ Copyright (c) 1998  Intel Corporation
 
 Module Name:
 
-    efefind.h
+    efibind.h
 
 Abstract:
 
