@@ -16,9 +16,11 @@ install:
 	mkdir -p $(INSTALLROOT)$(PREFIX)/include/efi
 	mkdir -p $(INSTALLROOT)$(PREFIX)/include/efi/protocol
 	mkdir -p $(INSTALLROOT)$(PREFIX)/include/efi/$(ARCH)
+	mkdir -p $(INSTALLROOT)$(PREFIX)/include/efi/cplusplus
 	$(INSTALL) -m 644 $(SRCDIR)/*.h $(INSTALLROOT)$(PREFIX)/include/efi
 	$(INSTALL) -m 644 $(SRCDIR)/protocol/*.h $(INSTALLROOT)$(PREFIX)/include/efi/protocol
 	$(INSTALL) -m 644 $(SRCDIR)/$(ARCH)/*.h $(INSTALLROOT)$(PREFIX)/include/efi/$(ARCH)
+	$(INSTALL) -m 644 $(SRCDIR)/cplusplus/*.h $(INSTALLROOT)$(PREFIX)/include/efi/cplusplus
 ifeq ($(ARCH),ia64)
 	mkdir -p $(INSTALLROOT)$(PREFIX)/include/efi/protocol/ia64
 	$(INSTALL) -m 644 $(SRCDIR)/protocol/ia64/*.h $(INSTALLROOT)$(PREFIX)/include/efi/protocol/ia64
