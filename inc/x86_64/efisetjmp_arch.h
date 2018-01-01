@@ -1,6 +1,10 @@
 #ifndef GNU_EFI_X86_64_SETJMP_H
 #define GNU_EFI_X86_64_SETJMP_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define JMPBUF_ALIGN 8
 
 typedef struct {
@@ -18,5 +22,7 @@ typedef struct {
 	UINT64	MxCsr;
 	UINT8	XmmBuffer[160]; // XMM6 - XMM15
 } ALIGN(JMPBUF_ALIGN) jmp_buf;
+
+__END_DECLS
 
 #endif /* GNU_EFI_X86_64_SETJMP_H */

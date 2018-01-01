@@ -19,6 +19,10 @@ Revision History
 #ifndef _LEGACY_BOOT_INCLUDE_
 #define _LEGACY_BOOT_INCLUDE_
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define LEGACY_BOOT_PROTOCOL \
     { 0x376e5eb2, 0x30e4, 0x11d3, { 0xba, 0xe5, 0x0, 0x80, 0xc7, 0x3c, 0x88, 0x81 } }
 
@@ -115,5 +119,7 @@ EFI_STATUS
 PlInitializeLegacyBoot (
     VOID
     );
+
+__END_DECLS
 
 #endif

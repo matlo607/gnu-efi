@@ -1,6 +1,10 @@
 #ifndef _EFI_PCI_IO_H
 #define _EFI_PCI_IO_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define EFI_PCI_IO_PROTOCOL_GUID \
     { 0x4cf5b200, 0x68b8, 0x4ca5, {0x9e, 0xec, 0xb2, 0x3e, 0x3f, 0x50, 0x02, 0x9a} }
 
@@ -395,5 +399,7 @@ typedef struct _EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL {
   EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL_CONFIGURATION   Configuration;
   UINT32                                          SegmentNumber;
 } EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL;
+
+__END_DECLS
 
 #endif /* _EFI_PCI_IO_H */

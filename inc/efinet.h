@@ -14,6 +14,9 @@ Abstract:
 Revision History
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -344,5 +347,7 @@ typedef struct _EFI_SIMPLE_NETWORK_PROTOCOL {
 
 typedef struct _EFI_SIMPLE_NETWORK_PROTOCOL _EFI_SIMPLE_NETWORK;
 typedef EFI_SIMPLE_NETWORK_PROTOCOL EFI_SIMPLE_NETWORK;
+
+__END_DECLS
 
 #endif /* _EFINET_H */

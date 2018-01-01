@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 //
 //
@@ -57,5 +61,6 @@ typedef struct {
 } MASTER_BOOT_RECORD;
 #pragma pack()
 
+__END_DECLS
 
 #endif

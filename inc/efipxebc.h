@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // PXE Base Code protocol
 //
@@ -478,5 +482,7 @@ typedef struct _EFI_PXE_BASE_CODE_CALLBACK_PROTOCOL {
 
 typedef struct _EFI_PXE_BASE_CODE_CALLBACK_PROTOCOL _EFI_PXE_BASE_CODE_CALLBACK;
 typedef EFI_PXE_BASE_CODE_CALLBACK_PROTOCOL EFI_PXE_BASE_CODE_CALLBACK;
+
+__END_DECLS
 
 #endif /* _EFIPXEBC_H */

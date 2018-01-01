@@ -4,6 +4,10 @@
 #ifndef _PE_H
 #define _PE_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define IMAGE_DOS_SIGNATURE                 0x5A4D      // MZ
 #define IMAGE_OS2_SIGNATURE                 0x454E      // NE
 #define IMAGE_OS2_SIGNATURE_LE              0x454C      // LE
@@ -592,4 +596,6 @@ typedef struct _IMAGE_IMPORT_DESCRIPTOR {
     PIMAGE_THUNK_DATA FirstThunk;
 } IMAGE_IMPORT_DESCRIPTOR, *PIMAGE_IMPORT_DESCRIPTOR;
 
-#endif
+__END_DECLS
+
+#endif /* _PE_H */

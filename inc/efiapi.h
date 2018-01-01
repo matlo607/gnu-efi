@@ -20,6 +20,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // EFI Specification Revision
 //
@@ -962,6 +966,8 @@ typedef struct _EFI_SYSTEM_TABLE {
     EFI_CONFIGURATION_TABLE         *ConfigurationTable;
 
 } EFI_SYSTEM_TABLE;
+
+__END_DECLS
 
 #endif
 

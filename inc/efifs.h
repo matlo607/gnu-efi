@@ -19,6 +19,9 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 //
 // EFI Partition header (normaly starts in LBA 1)
@@ -111,6 +114,8 @@ typedef struct {
 //
 
 #define EFI_LBAL_RL(a)      ((EFI_RL*) (((CHAR8 *) (a)) + (a)->Hdr.HeaderSize))
+
+__END_DECLS
 
 #endif
 

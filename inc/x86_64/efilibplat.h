@@ -16,6 +16,12 @@ Abstract:
 Revision History
 
 --*/
+#ifndef GNU_EFI_X86_64_EFILIBPLAT_H
+#define GNU_EFI_X86_64_EFILIBPLAT_H
+
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 VOID
 InitializeLibPlatform (
@@ -23,4 +29,6 @@ InitializeLibPlatform (
     IN EFI_SYSTEM_TABLE     *SystemTable
     );
 
-   
+__END_DECLS
+
+#endif /* GNU_EFI_X86_64_EFILIBPLAT_H */

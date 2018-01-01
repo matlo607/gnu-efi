@@ -18,6 +18,9 @@
 #ifndef __EFI_SHELL_PARAMETERS_PROTOCOL__
 #define __EFI_SHELL_PARAMETERS_PROTOCOL__
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 // EDK2's ShellBase.h
 typedef VOID *SHELL_FILE_HANDLE;
@@ -59,5 +62,7 @@ typedef struct _EFI_SHELL_PARAMETERS_PROTOCOL {
   ///
   SHELL_FILE_HANDLE StdErr;
 } EFI_SHELL_PARAMETERS_PROTOCOL;
+
+__END_DECLS
 
 #endif

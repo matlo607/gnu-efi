@@ -20,6 +20,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 typedef UINT16          CHAR16;
 typedef UINT8           CHAR8;
 typedef UINT8           BOOLEAN;
@@ -216,5 +220,6 @@ typedef UINT8   ISO_639_2;
                                                 0x0000000000000008
 #define EFI_OS_INDICATIONS_CAPSULE_RESULT_VAR_SUPPORTED \
                                                 0x0000000000000010
+__END_DECLS
 
 #endif

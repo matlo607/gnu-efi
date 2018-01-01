@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 extern UINTN     EFIDebug;
 
 #if EFI_DEBUG
@@ -616,5 +620,7 @@ typedef struct _EFI_DEBUG_SUPPORT_PROTOCOL {
     EFI_REGISTER_EXCEPTION_CALLBACK   RegisterExceptionCallback;
     EFI_INVALIDATE_INSTRUCTION_CACHE  InvalidateInstructionCache;
 } EFI_DEBUG_SUPPORT_PROTOCOL;
+
+__END_DECLS
 
 #endif

@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #ifdef SOFT_SDV
 #define PCI_MAX_BUS     1
 #else
@@ -184,10 +188,6 @@ typedef struct {
 } PCI_DATA_STRUCTURE;
 #pragma pack()
 
+__END_DECLS
+
 #endif
-    
-
-
-
-
-    

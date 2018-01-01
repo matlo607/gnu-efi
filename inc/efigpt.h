@@ -17,6 +17,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define PRIMARY_PART_HEADER_LBA         1
 
 typedef struct {
@@ -63,6 +67,8 @@ typedef struct {
 
 #define EFI_PART_TYPE_LEGACY_MBR_GUID   \
     { 0x024dee41, 0x33e7, 0x11d3, {0x9d, 0x69, 0x00, 0x08, 0xc7, 0x81, 0xf3, 0x9f} }
+
+__END_DECLS
 
 #endif
 

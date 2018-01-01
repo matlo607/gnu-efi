@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // VGA Device Structure
 //
@@ -90,6 +94,8 @@ typedef struct {
     UINT32               Version;
     INSTALL_VGA_DRIVER   InstallGenericVgaDriver;
 } INSTALL_VGA_DRIVER_INTERFACE;
+
+__END_DECLS
 
 #endif
 

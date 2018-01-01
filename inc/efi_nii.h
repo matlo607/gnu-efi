@@ -17,6 +17,10 @@ Revision history:
     2000-Feb-14 M(f)J   Genesis.
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define EFI_NETWORK_INTERFACE_IDENTIFIER_PROTOCOL_GUID \
     { 0xE18541CD, 0xF755, 0x4f73, {0x92, 0x8D, 0x64, 0x3C, 0x8A, 0x79, 0xB2, 0x29} }
 
@@ -74,5 +78,7 @@ typedef struct _EFI_NETWORK_INTERFACE_IDENTIFIER_PROTOCOL {
 // 'EFI_NETWORK_INTERFACE_IDENTIFIER_PROTOCOL' GUID definition,
 // from older versions of gnu-efi, is now obsoleted.
 // Use 'EFI_NETWORK_INTERFACE_IDENTIFIER_PROTOCOL_GUID' instead.
+
+__END_DECLS
 
 #endif // _EFI_NII_H

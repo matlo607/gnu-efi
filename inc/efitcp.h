@@ -6,6 +6,10 @@ Copyright (c) 2013  Intel Corporation
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define EFI_TCP4_SERVICE_BINDING_PROTOCOL \
     { 0x00720665, 0x67eb, 0x4a99, {0xba, 0xf7, 0xd3, 0xc3, 0x3a, 0x1c,0x7c, 0xc9}}
 
@@ -387,5 +391,7 @@ typedef struct _EFI_TCP6 {
     EFI_TCP6_CANCEL        Cancel;
     EFI_TCP6_POLL          Poll;
 } EFI_TCP6;
+
+__END_DECLS
 
 #endif /* _EFI_TCP_H */

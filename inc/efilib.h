@@ -28,6 +28,10 @@ Revision History
 #include "pci22.h"
 #include "libsmbios.h"
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Public read-only data in the EFI library
 //
@@ -999,5 +1003,7 @@ extern EFI_DEVICE_IO_INTERFACE  *GlobalIoFncs;
 
 #define Pause()             WaitForSingleEvent (ST->ConIn->WaitForKey, 0)
 #define Port80(_PostCode)   GlobalIoFncs->Io.Write (GlobalIoFncs, IO_UINT16, (UINT64)0x80, 1, &(_PostCode))
+
+__END_DECLS
 
 #endif

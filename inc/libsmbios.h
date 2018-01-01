@@ -16,6 +16,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Define SMBIOS tables.
 //
@@ -127,6 +131,7 @@ typedef union {
 } SMBIOS_STRUCTURE_POINTER;
 #pragma pack()
 
+__END_DECLS
 
 #endif
 

@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #ifndef EFI_NT_EMUL
 
 //
@@ -30,7 +34,7 @@ typedef struct _LIST_ENTRY {
     struct _LIST_ENTRY  *Blink;
 } LIST_ENTRY;
 
-#endif 
+#endif /* EFI_NT_EMUL */
 
 
 //
@@ -172,6 +176,8 @@ typedef struct _FLOCK {
     EFI_TPL     OwnerTpl;
     UINTN       Lock;
 } FLOCK;
+
+__END_DECLS
 
 #endif
 

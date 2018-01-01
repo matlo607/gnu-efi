@@ -1,6 +1,10 @@
 #ifndef _EFI_ROMLOAD_H
 #define _EFI_ROMLOAD_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define ROM_SIGNATURE 0xaa55
 #define PCIDS_SIGNATURE "PCIR"
 #pragma pack(push)
@@ -37,5 +41,7 @@ typedef struct
     UINT8 resvd[38];
 }RomHeader;
 #pragma pack(pop)
+
+__END_DECLS
 
 #endif

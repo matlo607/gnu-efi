@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Device Path structures - Section C
 //
@@ -578,5 +582,7 @@ typedef struct {
     EFI_DEVICE_PATH_FROM_TEXT_NODE       ConvertTextToDeviceNode;
     EFI_DEVICE_PATH_FROM_TEXT_PATH       ConvertTextToDevicePath;
 } EFI_DEVICE_PATH_FROM_TEXT_PROTOCOL;
+
+__END_DECLS
 
 #endif

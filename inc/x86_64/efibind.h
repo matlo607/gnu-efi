@@ -18,6 +18,11 @@ Revision History
 --*/
 #ifndef X86_64_EFI_BIND
 #define X86_64_EFI_BIND
+
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #ifndef __GNUC__
 #pragma pack()
 #endif
@@ -386,5 +391,7 @@ UINT64 efi_call10(void *func, UINT64 arg1, UINT64 arg2, UINT64 arg3,
 #ifdef _MSC_EXTENSIONS
 #pragma warning ( disable : 4731 )  // Suppress warnings about modification of EBP
 #endif
+
+__END_DECLS
 
 #endif

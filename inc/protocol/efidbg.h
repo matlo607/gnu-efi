@@ -42,6 +42,10 @@
 #ifndef _EFIDBG_H_
 #define _EFIDBG_H_
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #include "eficontext.h"
 #include "efiser.h"
 
@@ -207,4 +211,6 @@ typedef struct _EFI_DEBUGPORT_UART16550_CONTROL_INTERFACE {
 
 #define DEVICE_PATH_DEBUGPORT DEBUGPORT_IO_PROTOCOL
         
+__END_DECLS
+
 #endif /* _EFIDBG_H_ */

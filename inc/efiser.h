@@ -17,6 +17,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Serial protocol
 //
@@ -131,6 +135,8 @@ typedef struct _EFI_SERIAL_IO_PROTOCOL {
 
 typedef struct _EFI_SERIAL_IO_PROTOCOL _SERIAL_IO_INTERFACE;
 typedef EFI_SERIAL_IO_PROTOCOL SERIAL_IO_INTERFACE;
+
+__END_DECLS
 
 #endif
 

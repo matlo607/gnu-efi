@@ -1,6 +1,9 @@
 #ifndef _EFI_PXE_H
 #define _EFI_PXE_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 /*++
 Copyright (c) Intel  1999
@@ -1737,6 +1740,8 @@ typedef struct s_pxe_db_receive {
 } PXE_DB_RECEIVE;
 
 #pragma pack()
+
+__END_DECLS
 
 /* EOF - efi_pxe.h */
 #endif /* _EFI_PXE_H */

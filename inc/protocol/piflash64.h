@@ -18,6 +18,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Guid that identifies the IFLASH protocol
 //
@@ -117,5 +121,6 @@ typedef struct _IFLASH64_PROTOCOL_INTERFACE {
 
 } IFLASH64_PROTOCOL_INTERFACE;
 
+__END_DECLS
 
 #endif

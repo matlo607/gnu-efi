@@ -1,6 +1,9 @@
 #ifndef _EFI_UDP_H
 #define _EFI_UDP_H
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 /*++
 Copyright (c) 2013  Intel Corporation
@@ -268,5 +271,7 @@ typedef struct _EFI_UDP6 {
     EFI_UDP6_CANCEL        Cancel;
     EFI_UDP6_POLL          Poll;
 } EFI_UDP6;
+
+__END_DECLS
 
 #endif /* _EFI_UDP_H */

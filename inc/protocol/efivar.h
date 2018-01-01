@@ -11,8 +11,12 @@ Abstract:
 Revision History
 
 --*/
+#ifndef _EFIVAR_H
+#define _EFIVAR_H
 
+#include "cppdecl.h"
 
+__BEGIN_DECLS
 
 //
 // The variable store protocol interface is specific to the reference
@@ -131,3 +135,6 @@ typedef struct _EFI_VARIABLE_STORE {
 //      function only when needed.
 //
 
+__END_DECLS
+
+#endif /* _EFIVAR_H */

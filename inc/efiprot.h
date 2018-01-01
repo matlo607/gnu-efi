@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 //  FPSWA library protocol
 //
@@ -1420,5 +1424,7 @@ typedef struct _EFI_EBC_PROTOCOL {
   EFI_EBC_REGISTER_ICACHE_FLUSH RegisterICacheFlush;
   EFI_EBC_GET_VERSION           GetVersion;
 } EFI_EBC_PROTOCOL;
+
+__END_DECLS
 
 #endif

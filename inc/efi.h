@@ -16,6 +16,9 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 // Add a predefined macro to detect usage of the library
 #ifndef _GNU_EFI
@@ -58,5 +61,7 @@ Revision History
 #include "efitcp.h"
 #include "efipoint.h"
 #include "efisetjmp.h"
+
+__END_DECLS
 
 #endif

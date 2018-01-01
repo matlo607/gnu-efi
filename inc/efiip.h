@@ -6,6 +6,10 @@ Copyright (c) 2013  Intel Corporation
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #define EFI_IP4_SERVICE_BINDING_PROTOCOL \
    {0xc51711e7,0xb4bf,0x404a,{0xbf,0xb8,0x0a,0x04, 0x8e,0xf1,0xff,0xe4}}
 
@@ -455,5 +459,7 @@ typedef struct _EFI_IP6 {
     EFI_IP6_CANCEL        Cancel;
     EFI_IP6_POLL          Poll;
 } EFI_IP6;
+
+__END_DECLS
 
 #endif /* _EFI_IP_H */

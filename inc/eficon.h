@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 //
 // Text output protocol
 //
@@ -301,6 +305,8 @@ typedef struct _SIMPLE_INPUT_INTERFACE {
     EFI_INPUT_READ_KEY                  ReadKeyStroke;
     EFI_EVENT                           WaitForKey;
 } SIMPLE_INPUT_INTERFACE, EFI_SIMPLE_TEXT_IN_PROTOCOL;
+
+__END_DECLS
 
 #endif
 

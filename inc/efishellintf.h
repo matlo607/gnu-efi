@@ -27,6 +27,9 @@
 #ifndef _SHELLINTERFACE_H_
 #define _SHELLINTERFACE_H_
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
 
 #define SHELL_INTERFACE_PROTOCOL_GUID \
   { \
@@ -90,5 +93,7 @@ typedef struct {
   ///
   BOOLEAN                   EchoOn;
 } EFI_SHELL_INTERFACE;
+
+__END_DECLS
 
 #endif

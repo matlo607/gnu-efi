@@ -19,6 +19,10 @@ Revision History
 
 --*/
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 #ifndef GNU_EFI_USE_EXTERNAL_STDARG
 typedef __builtin_va_list va_list;
 
@@ -29,5 +33,7 @@ typedef __builtin_va_list va_list;
 #else
 # include <stdarg.h>
 #endif
+
+__END_DECLS
 
 #endif

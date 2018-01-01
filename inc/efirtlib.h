@@ -22,6 +22,10 @@ Revision History
 #include "efipart.h"
 #include "efilibplat.h"
 
+#include "cppdecl.h"
+
+__BEGIN_DECLS
+
 
 VOID
 RUNTIMEFUNCTION
@@ -137,5 +141,6 @@ RtReleaseLock (
     IN FLOCK    *Lock
     );
 
+__END_DECLS
 
 #endif
